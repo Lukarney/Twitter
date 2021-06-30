@@ -11,7 +11,7 @@
 
 
 
-@interface ComposeViewController ()
+@interface ComposeViewController ()<UITextViewDelegate>
 
 @end
 
@@ -40,6 +40,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tweetContent.delegate = self;
     // Do any additional setup after loading the view.
 }
 

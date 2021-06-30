@@ -23,6 +23,10 @@
 
 @implementation TimelineViewController
 
+-(void) didTweet:(Tweet *)tweet{
+    [self.arrayOfTweets insertObject:tweet atIndex:0];
+    [self.tableView reloadData];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -67,7 +71,11 @@
     //configures rows
     Tweet *tweet = self.arrayOfTweets[indexPath.row];
     cell.author.text = tweet.user.name;
+    cell.username.text = tweet.user.screenName;
     cell.tweetText.text = tweet.text;
+    
+    cell.retweetLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.retweetCount];
+    cell.favoriteLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.favoriteCount];
         
     NSString *URLString = tweet.user.profilePicture;
     NSURL *url = [NSURL URLWithString:URLString];
