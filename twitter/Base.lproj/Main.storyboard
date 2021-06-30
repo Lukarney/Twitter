@@ -103,7 +103,8 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FId-ys-SAl">
                                                     <rect key="frame" x="91.5" y="128" width="30" height="30"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" image="retweet-icon"/>
+                                                    <state key="normal" image="retweet-icon" backgroundImage="retweet-icon"/>
+                                                    <state key="selected" image="retweet-icon-green" backgroundImage="retweet-icon-green"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-BS-DAK">
                                                     <rect key="frame" x="169.5" y="128" width="30" height="30"/>
@@ -112,6 +113,7 @@
                                                         <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <state key="selected" image="favor-icon-red" backgroundImage="favor-icon-red"/>
                                                     <connections>
                                                         <action selector="didTapFavorite:" destination="kox-1x-scy" eventType="touchUpInside" id="6ze-hd-Mni"/>
                                                     </connections>
@@ -337,9 +339,11 @@
         <image name="close-icon" width="26" height="24"/>
         <image name="edit-icon" width="30" height="27"/>
         <image name="favor-icon" width="30" height="30"/>
+        <image name="favor-icon-red" width="30" height="30"/>
         <image name="message-icon" width="30" height="30"/>
         <image name="reply-icon" width="30" height="30"/>
         <image name="retweet-icon" width="30" height="30"/>
+        <image name="retweet-icon-green" width="30" height="30"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

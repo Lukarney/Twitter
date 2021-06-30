@@ -34,7 +34,8 @@
     self.tweet.favorited = YES;
     self.tweet.favoriteCount += 1;
     // TODO: Update cell UI
-    [self.favoriteButton setImage:[UIImage imageNamed:@"favor-icon-red"] forState:UIControlStateSelected];
+    [self.favoriteButton setSelected:YES];
+    
     
     // TODO: Send a POST request to the POST favorites/create endpoint
     [[APIManager shared] favorite:self.tweet completion:^(Tweet *tweet, NSError *error){
@@ -44,6 +45,7 @@
         }
         else{
             NSLog(@"Successfully favorited the following Tweet: %@", tweet.text);
+            [self refreshData];
         }
     }];
     

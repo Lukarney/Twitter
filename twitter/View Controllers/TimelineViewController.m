@@ -73,6 +73,7 @@
     cell.author.text = tweet.user.name;
     cell.username.text = tweet.user.screenName;
     cell.tweetText.text = tweet.text;
+    cell.tweet = tweet;
     
     cell.retweetLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.retweetCount];
     cell.favoriteLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.favoriteCount];
