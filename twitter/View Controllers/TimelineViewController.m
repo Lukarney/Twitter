@@ -13,6 +13,7 @@
 #import "Tweet.h"
 #import "TweetCell.h"
 #import "ComposeViewController.h"
+#import "DateTools.h"
 
 @interface TimelineViewController () < ComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 
@@ -70,10 +71,13 @@
     
     //configures rows
     Tweet *tweet = self.arrayOfTweets[indexPath.row];
+    cell.tweet = tweet;
+    
     cell.author.text = tweet.user.name;
     cell.username.text = tweet.user.screenName;
     cell.tweetText.text = tweet.text;
-    cell.tweet = tweet;
+    cell.date.text = tweet.createdAtString.shortTimeAgoSinceNow;
+    
     
     cell.retweetLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.retweetCount];
     cell.favoriteLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.favoriteCount];

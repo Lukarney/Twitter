@@ -38,7 +38,7 @@
         [self.favoriteButton setSelected:NO];
         
         
-        // TODO: Send a POST request to the POST favorites/create endpoint
+        // TODO: Send a POST request to the POST favorites/destroy endpoint
         [[APIManager shared] unfavorite:self.tweet completion:^(Tweet *tweet, NSError *error){
             if(error){
                 NSLog(@"Error favoriting tweet: %@", error.localizedDescription);
@@ -84,7 +84,7 @@
         [self.retweetButton setSelected:NO];
         
         
-        // TODO: Send a POST request to the POST favorites/create endpoint
+        // TODO: Send a POST request to the POST unretweet/destroy endpoint
         [[APIManager shared] unretweet:self.tweet completion:^(Tweet *tweet, NSError *error){
             if(error){
                 NSLog(@"Error unRetweeting tweet: %@", error.localizedDescription);
@@ -105,7 +105,7 @@
         [self.retweetButton setSelected:YES];
         
         
-        // TODO: Send a POST request to the POST favorites/create endpoint
+        // TODO: Send a POST request to the POST retweet/create endpoint
         [[APIManager shared] retweet:self.tweet completion:^(Tweet *tweet, NSError *error){
             if(error){
                 NSLog(@"Error retweeting tweet: %@", error.localizedDescription);
