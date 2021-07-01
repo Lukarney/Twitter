@@ -8,6 +8,8 @@
 
 #import "DetailsViewController.h"
 #import "DateTools.h"
+#import "APIManager.h"
+#import "Tweet.h"
 
 @interface DetailsViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *profilePicture;
@@ -20,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *retweetsUnit;
 @property (weak, nonatomic) IBOutlet UILabel *likesNumber;
 @property (weak, nonatomic) IBOutlet UILabel *likesUnit;
+@property (weak, nonatomic) IBOutlet UIButton *retweetButton;
+@property (weak, nonatomic) IBOutlet UIButton *favoriteButton;
 
 @end
 
@@ -65,6 +69,100 @@
     UIImage *picture = [UIImage imageWithData:urlData];
     self.profilePicture.image = nil;
     [self.profilePicture setImage:picture];
+}
+-(void)refreshData {
+    self.tweetText.text = self.tweet.text;
+    self.retweetsNumber.text = [NSString stringWithFormat:@"%d",self.tweet.retweetCount];
+    self.likesNumber.text = [NSString stringWithFormat:@"%d",self.tweet.favoriteCount];
+}
+
+- (IBAction)didTapFavorite:(id)sender {
+    if(self.tweet.favorited){
+        // TODO: Update the local tweet model
+        self.tweet.favorited = NO;
+        self.tweet.favoriteCount -= 1;
+        // TODO: Update cell UI
+        [self.favoriteButton setSelected:NO];
+        
+        
+        // TODO: Send a POST request to the POST favorites/destroy endpoint
+        [[APIManager shared] unfavorite:self.tweet completion:^(Tweet *tweet, NSError *error){
+            if(error){
+                NSLog(@"Error favoriting tweet: %@", error.localizedDescription);
+                
+            }
+            else{
+                NSLog(@"Successfully favorited the following Tweet: %@", tweet.text);
+                [self refreshData];
+            }
+        }];
+        
+    }
+    else{
+        // TODO: Update the local tweet model
+        self.tweet.favorited = YES;
+        self.tweet.favoriteCount += 1;
+        // TODO: Update cell UI
+        [self.favoriteButton setSelected:YES];
+        
+        
+        // TODO: Send a POST request to the POST favorites/create endpoint
+        [[APIManager shared] favorite:self.tweet completion:^(Tweet *tweet, NSError *error){
+            if(error){
+                NSLog(@"Error favoriting tweet: %@", error.localizedDescription);
+                
+            }
+            else{
+                NSLog(@"Successfully favorited the following Tweet: %@", tweet.text);
+                [self refreshData];
+            }
+        }];
+        
+    }
+}
+- (IBAction)didTapRetweet:(id)sender {
+    if(self.tweet.retweeted){
+        // TODO: Update the local tweet model
+        self.tweet.retweeted = NO;
+        self.tweet.retweetCount -= 1;
+        // TODO: Update cell UI
+        [self.retweetButton setSelected:NO];
+        
+        
+        // TODO: Send a POST request to the POST unretweet/destroy endpoint
+        [[APIManager shared] unRetweet:self.tweet completion:^(Tweet *tweet, NSError *error){
+            if(error){
+                NSLog(@"Error unRetweeting tweet: %@", error.localizedDescription);
+            }
+            else{
+                NSLog(@"Successfully unRetweeted the following Tweet: %@", tweet.text);
+                [self refreshData];
+            }
+        }];
+        
+    }
+    else{
+        // TODO: Update the local tweet model
+        self.tweet.retweeted = YES;
+        self.tweet.retweetCount += 1;
+        // TODO: Update cell UI
+        [self.retweetButton setSelected:YES];
+        
+        
+        // TODO: Send a POST request to the POST retweet/create endpoint
+        [[APIManager shared] retweet:self.tweet completion:^(Tweet *tweet, NSError *error){
+            if(error){
+                NSLog(@"Error retweeting tweet: %@", error.localizedDescription);
+                
+            }
+            else{
+                NSLog(@"Successfully retweeted the following Tweet: %@", tweet.text);
+                [self refreshData];
+            }
+        }];
+        
+    }
+    
 }
 
 /*
