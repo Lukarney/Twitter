@@ -98,13 +98,17 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEa-7T-M5q">
                                                     <rect key="frame" x="45.5" y="128" width="30" height="30"/>
-                                                    <state key="normal" image="reply-icon"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="reply-icon" backgroundImage="reply-icon"/>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FId-ys-SAl">
                                                     <rect key="frame" x="91.5" y="128" width="30" height="30"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" image="retweet-icon" backgroundImage="retweet-icon"/>
                                                     <state key="selected" image="retweet-icon-green" backgroundImage="retweet-icon-green"/>
+                                                    <connections>
+                                                        <action selector="didTapRetweet:" destination="kox-1x-scy" eventType="touchUpInside" id="XOP-UV-24D"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOa-BS-DAK">
                                                     <rect key="frame" x="169.5" y="128" width="30" height="30"/>
@@ -120,7 +124,8 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGZ-nH-jQK">
                                                     <rect key="frame" x="247.5" y="128" width="30" height="30"/>
-                                                    <state key="normal" image="message-icon"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="message-icon" backgroundImage="message-icon"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppj-ko-i8w">
                                                     <rect key="frame" x="162.5" y="8" width="67" height="19.5"/>
