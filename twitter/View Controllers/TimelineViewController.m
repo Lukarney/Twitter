@@ -14,6 +14,7 @@
 #import "TweetCell.h"
 #import "ComposeViewController.h"
 #import "DateTools.h"
+#import "DetailsViewController.h"
 
 @interface TimelineViewController () < ComposeViewControllerDelegate, UITableViewDataSource, UITableViewDelegate>
 
@@ -76,7 +77,7 @@
     cell.author.text = tweet.user.name;
     cell.username.text = tweet.user.screenName;
     cell.tweetText.text = tweet.text;
-    cell.date.text = tweet.createdAtString.shortTimeAgoSinceNow;
+    cell.date.text = tweet.createdAtDate.shortTimeAgoSinceNow;
     
     
     cell.retweetLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.retweetCount];
@@ -159,11 +160,30 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    UINavigationController *navigationController = [segue destinationViewController];
-    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
-    composeController.delegate = self;
+    NSLog(@"%@", segue.identifier);
+    if([segue.identifier isEqualToString:@"composeTweet"]){
+        // Get the new view controller using [segue destinationViewController].
+        // Pass the selected object to the new view controller.
+        UINavigationController *navigationController = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+        composeController.delegate = self;
+    }
+    else{
+        //[segue.identifier isEqualToString:@"showDetailTweet"]
+        //Get Tweetcell to show in details page
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
+        Tweet *tweet = self.arrayOfTweets[indexPath.row];
+
+        DetailsViewController *detailsViewController = [segue destinationViewController];
+        detailsViewController.tweet = tweet;
+        NSLog(@"Tapping on a tweet!");
+        
+    }
+    
+    
+    
+    
 }
 
 

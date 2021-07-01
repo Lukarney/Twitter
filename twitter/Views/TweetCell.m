@@ -85,10 +85,9 @@
         
         
         // TODO: Send a POST request to the POST unretweet/destroy endpoint
-        [[APIManager shared] unretweet:self.tweet completion:^(Tweet *tweet, NSError *error){
+        [[APIManager shared] unRetweet:self.tweet completion:^(Tweet *tweet, NSError *error){
             if(error){
                 NSLog(@"Error unRetweeting tweet: %@", error.localizedDescription);
-                
             }
             else{
                 NSLog(@"Successfully unRetweeted the following Tweet: %@", tweet.text);
