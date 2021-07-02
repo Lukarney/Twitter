@@ -2,7 +2,7 @@
 
 **Name of your app** is a basic twitter app to read and compose tweets the [Twitter API](https://apps.twitter.com/).
 
-Time spent: **X** hours spent in total
+Time spent: **~22** hours spent in total
 
 ## User Stories
 
@@ -56,6 +56,8 @@ Here's a walkthrough of implemented user stories:
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/K6XGofM" data-context="false" ><a href="//imgur.com/a/K6XGofM"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 https://imgur.com/a/K6XGofM
 
+With different angles and roations:  <blockquote class="imgur-embed-pub" lang="en" data-id="a/S5WTQNv" data-context="false" ><a href="//imgur.com/a/S5WTQNv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> https://imgur.com/a/S5WTQNv 
+
 
 GIF created with [Kap](https://getkap.co/).
 
@@ -68,6 +70,8 @@ Describe any challenges encountered while building the app.
 List an 3rd party libraries, icons, graphics, or other assets you used in your app.
 
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
+
+
 
 ## License
 
