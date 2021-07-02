@@ -79,9 +79,22 @@
     cell.tweetText.text = tweet.text;
     cell.date.text = tweet.createdAtDate.shortTimeAgoSinceNow;
     
-    
     cell.retweetLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.retweetCount];
     cell.favoriteLabel.text = [NSString stringWithFormat:@"%d",cell.tweet.favoriteCount];
+    
+    if(cell.tweet.favorited){
+        [cell.favoriteButton setSelected:YES];
+    }
+    else{
+        [cell.favoriteButton setSelected:NO];
+    }
+    
+    if(cell.tweet.retweeted){
+        [cell.retweetButton setSelected:YES];
+    }
+    else{
+        [cell.retweetButton setSelected:NO];
+    }
         
     NSString *URLString = tweet.user.profilePicture;
     NSURL *url = [NSURL URLWithString:URLString];
@@ -91,9 +104,10 @@
     cell.profilePicture.image = nil;
     [cell.profilePicture setImage:picture];
     
+    
+    
     return cell;
     }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

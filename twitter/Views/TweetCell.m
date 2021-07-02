@@ -27,6 +27,7 @@
     self.tweetText.text = self.tweet.text;
     self.retweetLabel.text = [NSString stringWithFormat:@"%d",self.tweet.retweetCount];
     self.favoriteLabel.text = [NSString stringWithFormat:@"%d",self.tweet.favoriteCount];
+    
 }
 
 - (IBAction)didTapFavorite:(id)sender {
