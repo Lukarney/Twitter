@@ -56,7 +56,10 @@ Here's a walkthrough of implemented user stories:
 <img src=‘https://imgur.com/a/K6XGofM’ title='Video Walkthrough' width='' alt='Video Walkthrough' />
 https://imgur.com/a/K6XGofM
 
-With different angles and roations:  <blockquote class="imgur-embed-pub" lang="en" data-id="a/S5WTQNv" data-context="false" ><a href="//imgur.com/a/S5WTQNv"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> https://imgur.com/a/S5WTQNv 
+With different angles and roations: 
+<img src=‘https://imgur.com/1S1JX7W’ title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://imgur.com/a/K6XGofM
+https://imgur.com/a/S5WTQNv 
 
 
 GIF created with [Kap](https://getkap.co/).
