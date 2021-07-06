@@ -55,11 +55,11 @@ Here's a walkthrough of implemented user stories:
 
 General Walkthrough:
 
-<blockquote class="imgur-embed-pub." lang="en" data-id="pwFO9v3"><a href="https://i.imgur.com/0fh9Yef">View post on imgur.com</a></blockquote>
+<blockquote class="imgur-embed-pub." lang="en" data-id="pwFO9v3"><a href="https://imgur.com/dXQCUYD">View post on imgur.com</a></blockquote>
 
-![Walkthrough](https://i.imgur.com/0fh9Yef.gif)
+![Walkthrough](https://imgur.com/dXQCUYD.gif)
 
-<img src="https://i.imgur.com/0fh9Yef.gif" width="100" height="200" />
+<img src="https://imgur.com/dXQCUYD.gif" width="100" height="200" />
 
 With different angles and roations: 
 
