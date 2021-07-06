@@ -57,8 +57,9 @@ Here's a walkthrough of implemented user stories:
 https://imgur.com/a/K6XGofM
 
 With different angles and roations: 
-<img src=‘https://imgur.com/1S1JX7W’ title='Video Walkthrough' width='' alt='Video Walkthrough' />
-https://imgur.com/a/K6XGofM
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 https://imgur.com/a/S5WTQNv 
 
 
