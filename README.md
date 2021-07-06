@@ -55,18 +55,17 @@ Here's a walkthrough of implemented user stories:
 
 General Walkthrough:
 
-<blockquote class="imgur-embed-pub." lang="en" data-id="pwFO9v3"><a href="https://imgur.com/pwFO9v3.gif">View post on imgur.com</a></blockquote>
+<blockquote class="imgur-embed-pub." lang="en" data-id="pwFO9v3"><a href="https://i.imgur.com/0fh9Yef">View post on imgur.com</a></blockquote>
 
-![Walkthrough](https://i.imgur.com/vjadrCO.gif)
+![Walkthrough](https://i.imgur.com/0fh9Yef.gif)
 
-<img src="https://i.imgur.com/n2RCZg2.gif" width="100" height="200" />
+<img src="https://i.imgur.com/0fh9Yef.gif" width="100" height="200" />
 
 With different angles and roations: 
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W.gif">View post on imgur.com</a></blockquote> 
 
 ![Different phone walkthrough](https://i.imgur.com/t0sihjS.gif)
-<img src="https://i.imgur.com/t0sihjS.gif" width="100" height="200" />
 
 
 GIF created with [Kap](https://getkap.co/).
