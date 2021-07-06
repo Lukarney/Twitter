@@ -59,6 +59,8 @@ General Walkthrough:
 
 ![Walkthrough](https://i.imgur.com/n2RCZg2.gif)
 
+<img src="https://i.imgur.com/n2RCZg2.gif)" width="100" height="200x" />
+
 With different angles and roations: 
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W.gif">View post on imgur.com</a></blockquote> 
