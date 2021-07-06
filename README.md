@@ -55,11 +55,11 @@ Here's a walkthrough of implemented user stories:
 
 General Walkthrough:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="pwFO9v3"><a href="https://imgur.com/pwFO9v3">View post on imgur.com</a></blockquote>
+<blockquote class="imgur-embed-pub." lang="en" data-id="pwFO9v3"><a href="https://imgur.com/pwFO9v3.gif">View post on imgur.com</a></blockquote>
 
 With different angles and roations: 
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W">View post on imgur.com</a></blockquote> 
+<blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W.gif">View post on imgur.com</a></blockquote> 
 
 
 GIF created with [Kap](https://getkap.co/).
