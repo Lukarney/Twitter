@@ -53,14 +53,13 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src=‘https://imgur.com/a/K6XGofM’ title='Video Walkthrough' width='' alt='Video Walkthrough' />
-https://imgur.com/a/K6XGofM
+General Walkthrough:
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Asuncyf" data-context="false" ><a href="//imgur.com/a/Asuncyf"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 With different angles and roations: 
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
-https://imgur.com/a/S5WTQNv 
+<blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W">View post on imgur.com</a></blockquote> 
 
 
 GIF created with [Kap](https://getkap.co/).
