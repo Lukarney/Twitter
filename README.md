@@ -66,6 +66,7 @@ With different angles and roations:
 <blockquote class="imgur-embed-pub" lang="en" data-id="1S1JX7W"><a href="https://imgur.com/1S1JX7W.gif">View post on imgur.com</a></blockquote> 
 
 ![Different phone walkthrough](https://i.imgur.com/1S1JX7W.gif)
+<img src="https://i.imgur.com/1S1JX7W.gif)" width="100" height="200x" />
 
 
 GIF created with [Kap](https://getkap.co/).
