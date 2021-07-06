@@ -55,7 +55,7 @@ Here's a walkthrough of implemented user stories:
 
 General Walkthrough:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/Asuncyf" data-context="false" ><a href="//imgur.com/a/Asuncyf"></a></blockquote>
+<blockquote class="imgur-embed-pub" lang="en" data-id="pwFO9v3"><a href="https://imgur.com/pwFO9v3">View post on imgur.com</a></blockquote>
 
 With different angles and roations: 
 
