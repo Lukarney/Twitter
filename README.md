@@ -57,7 +57,7 @@ General Walkthrough:
 
 <blockquote class="imgur-embed-pub." lang="en" data-id="pwFO9v3"><a href="https://imgur.com/dXQCUYD">View post on imgur.com</a></blockquote>
 
-![Walkthrough](https://imgur.com/dXQCUYD.gif)
+![Walkthrough](https://i.imgur.com/y7TqVwr.gif)
 
 <img src="https://imgur.com/dXQCUYD.gif" width="100" height="200" />
 
